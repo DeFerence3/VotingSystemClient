@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/frag_home"
+        android:icon="@drawable/baseline_cottage_24"
+        android:iconTint="@color/icon_background"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/results"
+        android:icon="@drawable/baseline_how_to_vote_40"
+        android:iconTint="@color/icon_background"
+        android:title="@string/results" />
+    <item
+        android:id="@+id/change_username"
+        android:icon="@drawable/baseline_person_24"
+        android:iconTint="@color/icon_background"
+        android:title="@string/change_username" />
+    <item
+        android:id="@+id/change_password"
+        android:icon="@drawable/baseline_key_24"
+        android:iconTint="@color/icon_background"
+        android:title="@string/change_password" />
+    <item
+        android:id="@+id/change_profile"
+        android:icon="@drawable/round_person_24"
+        android:iconTint="@color/icon_background"
+        android:title="@string/change_profile" />
+</menu>

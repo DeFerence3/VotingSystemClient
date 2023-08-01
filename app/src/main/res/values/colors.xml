@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_500">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#3F51B5</color>
+    <color name="darknavyblue">#20254a</color>
+    <color name="blue_selected">#1a307a</color>
+    <color name="blue_default">#2f3455</color>
+    <color name="navyblue">#2a4ab8</color>
+    <color name="lightgreytext">#d6d6d6</color>
+    <color name="icon_background">#ffffff</color>
+    <color name="ucrop_color_toolbar">@color/teal_500</color>
+    <color name="ucrop_color_statusbar">@color/teal_700</color>
+    <color name="ucrop_color_widget_active">@color/teal_500</color>
+</resources>

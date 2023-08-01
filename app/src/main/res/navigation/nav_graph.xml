@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@+id/frag_home">
+    <fragment
+        android:id="@+id/frag_home"
+        android:name="com.proj.votingclient.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_change_username"
+            app:destination="@id/change_username" />
+
+        <action
+            android:id="@+id/action_home_to_change_password"
+            app:destination="@id/change_password" />
+
+        <!--<action
+            android:id="@+id/action_home_to_voting"
+            app:destination="@id/voting" />
+        <action
+            android:id="@+id/action_home_to_result"
+            app:destination="@id/result" />
+        <action
+            android:id="@+id/action_home_to_change_profile_pic"
+            app:destination="@id/change_profile_pic" />-->
+
+    </fragment>
+    <fragment
+        android:id="@+id/results"
+        android:name="com.proj.votingclient.fragments.ResultFragment"
+        android:label="Results"
+        tools:layout="@layout/fragment_result"/>
+    <fragment
+        android:id="@+id/change_username"
+        android:name="com.proj.votingclient.fragments.ChangeUsernameFragment"
+        android:label="Change Username"
+        tools:layout="@layout/fragment_change_username">
+        <action
+            android:id="@+id/action_change_username_to_enternewusername"
+            app:destination="@id/enternewusername" />
+    </fragment>
+    <fragment
+        android:id="@+id/change_password"
+        android:name="com.proj.votingclient.fragments.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password">
+        <action
+            android:id="@+id/action_change_password_to_enternewpassword"
+            app:destination="@id/enternewpassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/change_profile"
+        android:name="com.proj.votingclient.fragments.ChangeProfilePicFragment"
+        android:label="Change Profile Pic"
+        tools:layout="@layout/fragment_change_profile_pic"/>
+
+
+    <fragment
+        android:id="@+id/enternewusername"
+        android:name="com.proj.votingclient.fragments.EnterNewUsernameFragment"
+        android:label="Enter New Username"
+        tools:layout="@layout/fragment_enter_new_username"/>
+    <fragment
+        android:id="@+id/enternewpassword"
+        android:name="com.proj.votingclient.fragments.EnterNewPasswordFragment"
+        android:label="Enter New Password"
+        tools:layout="@layout/fragment_enter_new_password"/>
+    <fragment
+        android:id="@+id/voting"
+        android:name="com.proj.votingclient.fragments.VotingFragment"
+        android:label="Place Your Vote"
+        tools:layout="@layout/fragment_voting"/>
+</navigation>

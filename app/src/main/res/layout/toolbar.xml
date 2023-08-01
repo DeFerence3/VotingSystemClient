@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#d5272727"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/logoutbuttonab"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal|end"
+        android:layout_marginEnd="10sp"
+        android:background="#00000000"
+        android:clickable="true"
+        android:contentDescription="@string/logoutbutton"
+        android:contextClickable="true"
+        android:src="@drawable/baseline_logout_24" />
+
+</androidx.appcompat.widget.Toolbar>

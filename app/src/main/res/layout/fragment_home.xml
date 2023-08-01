@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/electionscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/election"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/electionlinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp" />
+
+            <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+                android:id="@+id/loadingprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:visibility="visible"
+                app:loader_circleRadius="6dp"
+                app:loader_defaultColor="@color/darknavyblue"
+                app:loader_expandOnSelect="false"
+                app:loader_firstShadowColor="@color/blue_selected"
+                app:loader_isSingleDir="false"
+                app:loader_noOfDots="5"
+                app:loader_secondShadowColor="@color/blue_default"
+                app:loader_selectedColor="@color/navyblue"
+                app:loader_selectedRadius="10dp"
+                app:loader_showRunningShadow="true" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
