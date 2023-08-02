@@ -73,4 +73,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ntbi_result">Results page needs to be implemented</string>
     <string name="ntbi_change_dp">Change profile pic feature need to be implemented</string>
+    <string name="failed_to_read_documents">Failed to Read Documents\nTry refreshing or connect to internet</string>
+    <string name="no_election">No election currently going on</string>
 </resources>

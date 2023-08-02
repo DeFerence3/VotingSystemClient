@@ -7,6 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
 
+    <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+                android:id="@+id/loadingprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:visibility="visible"
+                app:loader_circleRadius="6dp"
+                app:loader_defaultColor="@color/darknavyblue"
+                app:loader_expandOnSelect="false"
+                app:loader_firstShadowColor="@color/blue_selected"
+                app:loader_isSingleDir="false"
+                app:loader_noOfDots="5"
+                app:loader_secondShadowColor="@color/blue_default"
+                app:loader_selectedColor="@color/navyblue"
+                app:loader_selectedRadius="10dp"
+                app:loader_showRunningShadow="true" />
+
+    <TextView
+        android:id="@+id/tv_noElection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_election"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
     <ScrollView
         android:id="@+id/electionscroll"
         android:layout_width="match_parent"
@@ -27,23 +55,6 @@
                 android:orientation="vertical"
                 android:paddingTop="15dp" />
 
-            <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
-                android:id="@+id/loadingprogress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:visibility="visible"
-                app:loader_circleRadius="6dp"
-                app:loader_defaultColor="@color/darknavyblue"
-                app:loader_expandOnSelect="false"
-                app:loader_firstShadowColor="@color/blue_selected"
-                app:loader_isSingleDir="false"
-                app:loader_noOfDots="5"
-                app:loader_secondShadowColor="@color/blue_default"
-                app:loader_selectedColor="@color/navyblue"
-                app:loader_selectedRadius="10dp"
-                app:loader_showRunningShadow="true" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
